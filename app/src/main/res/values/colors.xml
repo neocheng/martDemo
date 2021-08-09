@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008EFF</color>
+    <color name="colorPrimaryDark">#00000000</color>
+    <color name="colorPrimaryDark2">#33333333</color>
+    <color name="colorAccent">#008EFF</color>
+    <color name="ic_launcher_background">#FFFFFF</color>
+
+
+    <color name="tab_title_text">#8e8e93</color>
+    <color name="loginPage_text_1">#033375</color>
+    <color name="loginPage_text_2">#4285f4</color>
+    <color name="signhistory_item_background">#eaf6ff</color>
+
+    <color name="icActive">#FFFFFFFF</color>
+    <color name="icFocused">#DDFFFFFF</color>
+    <color name="icPressed">#AAFFFFFF</color>
+
+    <color name="black">#000000</color>
+    <color name="icon_back_style">#000000</color>
+
+    <!--GO-->
+    <!--Text Color-->
+    <color name="txt_white">#FFFFFF</color>
+    <color name="txt_white02">#FDFEFF</color>
+
+    <color name="txt_black">#000000</color>
+    <color name="txt_black02">#04040f</color>
+    <color name="txt_black3e3a39">#3e3a39</color>
+    <color name="txt_black3c3c3c">#3c3c3c</color>
+    <color name="txt_black7c879d">#7c879d</color>
+    <color name="txt_black0b0b0b">#0b0b0b</color>
+    <color name="txt_black2c2c2c">#2c2c2c</color>
+    <color name="txt_blackb1b1b1">#b1b1b1</color>
+
+    <color name="txt_transparent">#00000000</color>
+
+    <color name="txt_blue01">#2b4d88</color>
+    <color name="txt_blue02">#3c70cb</color>
+    <color name="txt_blue03">#338fff</color>
+    <color name="txt_blue04">#426096</color>
+    <color name="txt_blue05">#f2faff</color>
+    <color name="txt_blue06">#5b7686</color>
+    <color name="txt_blue07">#2d5167</color>
+    <color name="txt_blue08">#007aff</color>
+    <color name="txt_blue09">#2f476f</color>
+    <color name="txt_blue10">#4c6691</color>
+    <color name="txt_blue0e4066">#0e4066</color>
+    <color name="txt_blue0077dd">#0077dd</color>
+    <color name="txt_blue1395ff">#1395ff</color>
+    <color name="txt_blue007feb">#007feb</color>
+    <color name="txt_blue00396a">#00396a</color>
+    <color name="txt_blueeffaff">#effaff</color>
+
+    <color name="txt_blue_tac_login">#0087d7</color>
+    <color name="txt_blue_tac_login_word">#0070b2</color>
+
+    <color name="txt_gary01">#626262</color>
+    <color name="txt_gary02">#b2bbc7</color>
+    <color name="txt_gary03">#8b8b8b</color>
+    <color name="txt_gary04">#3f3f3f</color>
+    <color name="txt_gary05">#acacac</color>
+    <color name="txt_gary06">#3e3e3e</color>
+    <color name="txt_gary07">#696969</color>
+    <color name="txt_gary08">#bfbfbf</color>
+    <color name="txt_gary09">#29000000</color>
+    <color name="txt_gary10">#3d8e8e93</color>
+    <color name="txt_gary11">#b1afaf</color>
+    <color name="txt_gary12">#9a9a9a</color>
+    <color name="txt_gary13">#313131</color>
+    <color name="txt_gary14">#cccccc</color>
+    <color name="txt_gary969696">#969696</color>
+    <color name="txt_garybcbcbc">#bcbcbc</color>
+    <color name="txt_gary525252">#525252</color>
+    <color name="txt_gary5d5d5d">#5d5d5d</color>
+    <color name="txt_gary290e416c">#290e416c</color>
+    <color name="txt_gary7c7c7c">#7c7c7c</color>
+    <color name="txt_gary595959">#595959</color>
+    <color name="txt_gary959595">#959595</color>
+    <color name="txt_garye0e0e0">#e0e0e0</color>
+    <color name="txt_garyefafafa">#fafafa</color>
+    <color name="txt_garye4e4e4e">#4e4e4e</color>
+    <color name="txt_garye707070">#707070</color>
+    <color name="txt_garye8e8e8e">#8e8e8e</color>
+    <color name="txt_garyef3f6fa">#f3f6fa</color>
+    <color name="txt_garyec6c6c8">#c6c6c8</color>
+    <color name="txt_garye6c6c6c">#6c6c6c</color>
+    <color name="txt_garyeb2b2b2">#b2b2b2</color>
+    <color name="txt_garyecccccc">#cccccc</color>
+
+
+
+    <color name="set_backgound">#f3f6fa</color>
+    <color name="set_backgound_line">#4a3c3c43</color>
+    <color name="set_txt_color">#4e4e4e</color>
+
+    <color name="txt_status00">#8c8c8c</color>
+    <color name="txt_status01">#de6556</color>
+    <color name="txt_status02">#40a376</color>
+    <color name="txt_status03">#e59b25</color>
+    <color name="txt_status04">#aa3333</color>
+
+    <color name="txt_red_case_abandonment">#ff3b30</color>
+
+
+    <color name="zeus">#000000</color>
+    <color name="chicago">#5D5D5D</color>
+    <color name="mirage">#384146</color>
+
+
+    <color name="alto">#DADCDA</color>
+    <color name="blue">#2090EB</color>
+
+    <color name="dot_focus_blue">#2078fb</color>
+    <color name="dot_focus_gary">#d1dcea</color>
+    <color name="dot_focus_rede0350d">#e0350d</color>
+
+    <color name="red">#FF5252</color>
+
+    <color name="transparent_red">#88FF5252</color>
+    <color name="white">#FFFFFF</color>
+    <color name="white_alpha_75">#BFFFFFFF</color>
+    <color name="white_alpha_45">#6FFFFFFF</color>
+
+    <color name="tab_normal_text">#000000</color>
+    <color name="tab_selected_text">#000000</color>
+    <color name="line_color">#DCDCDC</color>
+
+    <color name="red_checked_color">#FF4C39</color>
+    <color name="red_normal_color">#935656</color>
+
+</resources>
