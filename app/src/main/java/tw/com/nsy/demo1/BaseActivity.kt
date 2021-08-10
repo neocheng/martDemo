@@ -18,27 +18,30 @@ import android.widget.*
 import androidx.appcompat.app.AlertDialog
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
+import kotlinx.android.synthetic.main.uc_white_actbar_item_blue.*
 import tw.com.nsy.demo1.connectNetFunc.ConnectApi
 import tw.com.nsy.demo1.connectNetFunc.dataModel.ShopCarModel
 import tw.com.nsy.demo1.connectNetFunc.repository.HttpResult
 import java.security.MessageDigest
+import java.text.DecimalFormat
 
-class BaseActivity : AppCompatActivity()  {
+abstract class BaseActivity : AppCompatActivity() {
     lateinit var thisView: View
 
 
-
-
-
-    fun getELoanSharedPreferences(): SharedPreferences {
-        return getSharedPreferences("eLoanProfile", Context.MODE_PRIVATE)
+    fun getShopSharedPreferences(): SharedPreferences {
+        return getSharedPreferences("shopCarProfile", Context.MODE_PRIVATE)
     }
 
-    fun getELoanSharedPreferencesEdit(): SharedPreferences.Editor {
-        return getSharedPreferences("eLoanProfile", Context.MODE_PRIVATE).edit()
+    fun getShopSharedPreferencesEdit(): SharedPreferences.Editor {
+        return getSharedPreferences("shopCarProfile", Context.MODE_PRIVATE).edit()
     }
 
+    override fun onSupportNavigateUp(): Boolean {
 
+        onBackPressed()
+        return true
+    }
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -170,19 +173,10 @@ class BaseActivity : AppCompatActivity()  {
     private var doubleBackToExitPressedOnce = false
 
     override fun onBackPressed() {
-//        if (doubleBackToExitPressedOnce) {
-//            super.onBackPressed()
-//            return
-//        }
-//
-//        this.doubleBackToExitPressedOnce = true
-//
-//        Toast.makeText(
-//            this@BaseActivity,
-//            resources.getString(R.string.please_click_back_again_to_exit),
-//            Toast.LENGTH_SHORT
-//        ).show()
-//        Handler().postDelayed(Runnable { doubleBackToExitPressedOnce = false }, 2000)
+
+        super.onBackPressed()
+        return
+
     }
 
     fun setStatusBarColored(context: Activity) {
@@ -267,17 +261,30 @@ class BaseActivity : AppCompatActivity()  {
         return result
     }
 
+
+    fun imgActbarBackBlueClick(_isShow2sec: Boolean) {
+        this.doubleBackToExitPressedOnce = _isShow2sec
+        img_actbar_back_key_blue.setOnClickListener {
+            onBackPressed()
+        }
+
+    }
+
     //region API Member
-    suspend fun GetMartapi( //發送手機驗證碼(sendOTP)
-        _mobile: String,
-        _catagroy: String = "regist"
-    ): HttpResult<ShopCarModel> {
+    suspend fun GetMartapi(): HttpResult<ShopCarModel> {
         return try {
             val result = ConnectApi.getShopCarService().getMarttest().await()
             HttpResult.Success(result)
         } catch (e: Throwable) {
             HttpResult.Error(e)
         }
+    }
+
+    fun toPrice(iPayment:String):String{
+//        val df = DecimalFormat("$#,##0.00")
+        val df = DecimalFormat("$#,###")
+//         return df.format(1234567.2)
+        return df.format(iPayment.toInt())
     }
 
 }

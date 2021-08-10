@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/txt_blue0077dd">
+
+    <ImageButton
+        android:id="@+id/img_actbar_back_key_blue"
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        android:layout_margin="8dp"
+        android:layout_marginStart="16dp"
+        android:background="@color/txt_transparent"
+        android:scaleType="center"
+        android:src="@drawable/btn_back_white"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_actbar_back_where_blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.023"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_actbar_back_where_blue"
+        app:layout_constraintVertical_bias="0.6" />
+
+    <TextView
+        android:id="@+id/tv_actbar_back_where_blue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|left"
+        android:layout_marginEnd="84dp"
+        android:layout_marginBottom="8dp"
+        android:textColor="@color/txt_white"
+        android:textSize="16sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_actbar_title_blue"
+        app:layout_constraintEnd_toStartOf="@+id/tv_actbar_title_blue"
+        app:layout_constraintTop_toTopOf="@+id/tv_actbar_title_blue"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tv_actbar_title_blue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="16dp"
+        android:layout_weight="1"
+        android:text="商品資訊"
+        android:textColor="@color/txt_white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/img_actbar_notification_blue"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_actbar_title_blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_actbar_title_blue" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -9,8 +9,8 @@
 
     <ImageView
         android:id="@+id/img_shopcar_photo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
         android:layout_marginStart="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -24,6 +24,8 @@
         android:layout_marginStart="8dp"
         android:layout_marginEnd="16dp"
         android:text="TextView"
+        android:textColor="#000000"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="@+id/img_shopcar_photo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/img_shopcar_photo"
@@ -35,13 +37,18 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
         android:text="TextView"
+        android:textColor="#E91E63"
+        android:textSize="16sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/img_shopcar_photo"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/img_shopcar_photo"
-        app:layout_constraintTop_toTopOf="@+id/img_shopcar_photo"
-        app:layout_constraintVertical_bias="0.7" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_shopcat_title"
+        app:layout_constraintVertical_bias="0.25" />
 
     <ImageView
         android:id="@+id/img_shopcat_like"
@@ -55,7 +62,7 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/img_shopcar_photo"
         app:layout_constraintTop_toBottomOf="@+id/tv_shopcat_money"
-        app:srcCompat="@mipmap/baseline_favorite_border_black_48" />
+        app:srcCompat="@drawable/baseline_favorite_border_black_48" />
 
     <ImageView
         android:id="@+id/img_shopcat_add"
@@ -65,5 +72,5 @@
         app:layout_constraintBottom_toBottomOf="@+id/img_shopcat_like"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/img_shopcat_like"
-        app:srcCompat="@mipmap/baseline_shopping_cart_black_48" />
+        app:srcCompat="@drawable/baseline_shopping_cart_black_48" />
 </androidx.constraintlayout.widget.ConstraintLayout>
